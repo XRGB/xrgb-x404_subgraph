@@ -16,17 +16,34 @@ dataSources:
       apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
-        - Initialized
-        - OwnershipTransferred
-        - X404Created
+        - X404
       abis:
         - name: X404Hub
           file: ./abis/X404Hub.json
+        - name: X404
+          file: ./abis/X404.json
       eventHandlers:
-        - event: Initialized(uint64)
-          handler: handleInitialized
-        - event: OwnershipTransferred(indexed address,indexed address)
-          handler: handleOwnershipTransferred
         - event: X404Created(indexed address,indexed address,indexed address,uint256)
           handler: handleX404Created
       file: ./src/x-404-hub.ts
+templates:
+  - kind: ethereum/contract
+    name: X404
+    network: goerli
+    source:
+      abi: X404
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./src/x-404.ts
+      entities:
+        - X404
+      abis:
+        - name: X404
+          file: ./abis/X404.json
+      eventHandlers:
+        - event: X404DepositNFT(indexed address,indexed address,indexed uint256,uint256)
+          handler: handleX404DepositNFT
+        - event: X404RedeemNFT(indexed address,indexed uint256)
+          handler: handleX404RedeemNFT
