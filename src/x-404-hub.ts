@@ -16,7 +16,6 @@ export function handleX404Created(event: X404Created): void {
     x404.addr = event.params.addr
     x404.blueChipNftAddr = event.params.blueChipNftAddr
     x404.creator = event.params.creator
-    x404.nftUnits = event.params.nftUnits
     x404.nftAmounts = BigInt.fromI32(0)
 
     x404.save()

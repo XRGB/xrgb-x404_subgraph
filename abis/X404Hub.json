@@ -72,12 +72,6 @@
         "internalType": "address",
         "name": "creator",
         "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "nftUnits",
-        "type": "uint256"
       }
     ],
     "name": "X404Created",

@@ -1,8 +1,8 @@
 {
   "goerli": {
     "X404Hub": {
-      "address": "0x6DE5881F292b5131825c44F2a2DDA09D4Fb8d496",
-      "startBlock": 10632640
+      "address": "0xD1db64E0324358085277121375520903F5376D0d",
+      "startBlock": 5426420
     }
   }
 }

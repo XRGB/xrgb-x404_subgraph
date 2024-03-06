@@ -8,7 +8,6 @@ type X404 @entity {
   addr: Bytes! # address
   blueChipNftAddr: Bytes! # address
   creator: Bytes! # address
-  nftUnits: BigInt! # uint256
   nftAmounts: BigInt! # uint256
   deposits: [Deposit!]! @derivedFrom(field: "x404")
   redeems: [Redeem!]! @derivedFrom(field: "x404")
@@ -29,6 +28,7 @@ type Redeem @entity {
   id: Bytes!
   x404: X404!
   redeemer: Bytes! # address
+  depositor: Bytes! # address
   tokenId: BigInt!
   blockNumber: BigInt!
   blockTimestamp: BigInt!
