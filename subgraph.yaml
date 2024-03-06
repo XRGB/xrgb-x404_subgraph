@@ -6,7 +6,7 @@ schema:
 dataSources:
   - kind: ethereum
     name: X404Hub
-    network: goerli
+    network: sepolia
     source:
       address: "0xD1db64E0324358085277121375520903F5376D0d"
       abi: X404Hub
@@ -29,7 +29,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: X404
-    network: goerli
+    network: sepolia
     source:
       abi: X404
     mapping:

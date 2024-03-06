@@ -10,8 +10,9 @@ export function handleX404Created(event: X404Created): void {
     if (x404Hub === null) {
         x404Hub = new X404Hub(Address.fromString(X404Hub_ADDRESS));
         x404Hub.x404Count = BigInt.fromI32(1);
+    }else{
+        x404Hub.x404Count = x404Hub.x404Count.plus(BigInt.fromI32(1));
     }
-    x404Hub.x404Count = x404Hub.x404Count.plus(BigInt.fromI32(1));
     let x404 = new X404(event.params.addr) as X404
     x404.addr = event.params.addr
     x404.blueChipNftAddr = event.params.blueChipNftAddr
