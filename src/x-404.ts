@@ -40,6 +40,7 @@ export function handleX404RedeemNFT(event: X404RedeemNFT): void {
 
     redeem.x404 = x404.id
     redeem.redeemer = event.params.redeemer
+    redeem.depositor = event.params.depositor
     redeem.tokenId = event.params.tokenId
     redeem.blockNumber = event.block.number
     redeem.blockTimestamp = event.block.timestamp
