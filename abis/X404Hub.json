@@ -1,25 +1,66 @@
 [
-  { "inputs": [], "name": "CantBeZeroAddress", "type": "error" },
-  { "inputs": [], "name": "EmergencyClose", "type": "error" },
-  { "inputs": [], "name": "InvaildRedeemMaxDeadline", "type": "error" },
-  { "inputs": [], "name": "InvalidInitialization", "type": "error" },
-  { "inputs": [], "name": "NotBlueChipNFT", "type": "error" },
-  { "inputs": [], "name": "NotInitializing", "type": "error" },
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "CantBeZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EmergencyClose",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvaildRedeemMaxDeadline",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotBlueChipNFT",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
   {
     "inputs": [
-      { "internalType": "address", "name": "owner", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
     ],
     "name": "OwnableInvalidOwner",
     "type": "error"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "account", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
     ],
     "name": "OwnableUnauthorizedAccount",
     "type": "error"
   },
-  { "inputs": [], "name": "X404NotCreate", "type": "error" },
+  {
+    "inputs": [],
+    "name": "X404NotCreate",
+    "type": "error"
+  },
   {
     "anonymous": false,
     "inputs": [
@@ -78,23 +119,21 @@
     "type": "event"
   },
   {
-    "inputs": [],
-    "name": "_bEmergencyClose",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "_bNoPermission",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "name": "_blueChipNftContract",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -107,23 +146,53 @@
         "name": "nftContractAddr",
         "type": "address"
       },
-      { "internalType": "address", "name": "creator", "type": "address" },
+      {
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
       {
         "internalType": "uint256",
         "name": "redeemMaxDeadline",
         "type": "uint256"
-      },
-      { "internalType": "uint256", "name": "nftUnits", "type": "uint256" }
+      }
     ],
     "stateMutability": "view",
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "inputs": [],
+    "name": "_redeemMaxDeadline",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "name": "_swapRouterAddr",
     "outputs": [
-      { "internalType": "bool", "name": "bV2orV3", "type": "bool" },
-      { "internalType": "address", "name": "routerAddr", "type": "address" },
+      {
+        "internalType": "bool",
+        "name": "bV2orV3",
+        "type": "bool"
+      },
+      {
+        "internalType": "address",
+        "name": "routerAddr",
+        "type": "address"
+      },
       {
         "internalType": "address",
         "name": "uniswapV3NonfungiblePositionManager",
@@ -134,9 +203,21 @@
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "name": "_x404Contract",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -146,18 +227,27 @@
         "internalType": "address",
         "name": "nftContractAddress",
         "type": "address"
-      },
-      { "internalType": "uint256", "name": "nftUnits", "type": "uint256" }
+      }
     ],
     "name": "createX404",
     "outputs": [
-      { "internalType": "address", "name": "x404", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "x404",
+        "type": "address"
+      }
     ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "bool", "name": "bClose", "type": "bool" }],
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "bClose",
+        "type": "bool"
+      }
+    ],
     "name": "emergencyClose",
     "outputs": [],
     "stateMutability": "nonpayable",
@@ -169,7 +259,11 @@
     "outputs": [
       {
         "components": [
-          { "internalType": "bool", "name": "bV2orV3", "type": "bool" },
+          {
+            "internalType": "bool",
+            "name": "bV2orV3",
+            "type": "bool"
+          },
           {
             "internalType": "address",
             "name": "routerAddr",
@@ -191,7 +285,11 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "owner", "type": "address" },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
       {
         "internalType": "uint256",
         "name": "maxRedeemDeadline",
@@ -199,7 +297,11 @@
       },
       {
         "components": [
-          { "internalType": "bool", "name": "bV2orV3", "type": "bool" },
+          {
+            "internalType": "bool",
+            "name": "bV2orV3",
+            "type": "bool"
+          },
           {
             "internalType": "address",
             "name": "routerAddr",
@@ -224,14 +326,13 @@
   {
     "inputs": [],
     "name": "owner",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "redeemMaxDeadline",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -249,7 +350,11 @@
         "name": "contractAddrs",
         "type": "address[]"
       },
-      { "internalType": "bool", "name": "state", "type": "bool" }
+      {
+        "internalType": "bool",
+        "name": "state",
+        "type": "bool"
+      }
     ],
     "name": "setBlueChipNftContract",
     "outputs": [],
@@ -258,8 +363,16 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "nftContract", "type": "address" },
-      { "internalType": "string", "name": "newContractUri", "type": "string" }
+      {
+        "internalType": "address",
+        "name": "nftContract",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "newContractUri",
+        "type": "string"
+      }
     ],
     "name": "setContractURI",
     "outputs": [],
@@ -268,7 +381,24 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "newDeadline", "type": "uint256" }
+      {
+        "internalType": "bool",
+        "name": "bPermission",
+        "type": "bool"
+      }
+    ],
+    "name": "setCreateX404Permission",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newDeadline",
+        "type": "uint256"
+      }
     ],
     "name": "setNewRedeemDeadline",
     "outputs": [],
@@ -278,8 +408,30 @@
   {
     "inputs": [
       {
+        "internalType": "address",
+        "name": "nftContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "redeemFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "setRedeemFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
         "components": [
-          { "internalType": "bool", "name": "bV2orV3", "type": "bool" },
+          {
+            "internalType": "bool",
+            "name": "bV2orV3",
+            "type": "bool"
+          },
           {
             "internalType": "address",
             "name": "routerAddr",
@@ -303,8 +455,16 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "nftContract", "type": "address" },
-      { "internalType": "string", "name": "newTokenURI", "type": "string" }
+      {
+        "internalType": "address",
+        "name": "nftContract",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "newTokenURI",
+        "type": "string"
+      }
     ],
     "name": "setTokenURI",
     "outputs": [],
@@ -313,7 +473,11 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "newOwner", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
     ],
     "name": "transferOwnership",
     "outputs": [],

@@ -7,10 +7,6 @@ import {
   afterAll
 } from "matchstick-as/assembly/index"
 import { BigInt, Address } from "@graphprotocol/graph-ts"
-import { Initialized } from "../generated/schema"
-import { Initialized as InitializedEvent } from "../generated/X404Hub/X404Hub"
-import { handleInitialized } from "../src/x-404-hub"
-import { createInitializedEvent } from "./x-404-hub-utils"
 
 // Tests structure (matchstick-as >=0.5.0)
 // https://thegraph.com/docs/en/developer/matchstick/#tests-structure-0-5-0
@@ -18,8 +14,6 @@ import { createInitializedEvent } from "./x-404-hub-utils"
 describe("Describe entity assertions", () => {
   beforeAll(() => {
     let version = BigInt.fromI32(234)
-    let newInitializedEvent = createInitializedEvent(version)
-    handleInitialized(newInitializedEvent)
   })
 
   afterAll(() => {

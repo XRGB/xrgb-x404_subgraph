@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: X404Hub
-    network: sepolia
+    network: mainnet
     source:
-      address: "0xD1db64E0324358085277121375520903F5376D0d"
+      address: "0x16be924A3AF57E1c293818894810b591aDFf82b1"
       abi: X404Hub
-      startBlock: 5426420
+      startBlock: 19433170
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -29,7 +29,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: X404
-    network: sepolia
+    network: mainnet
     source:
       abi: X404
     mapping:
